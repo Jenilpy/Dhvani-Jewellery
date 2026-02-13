@@ -36,6 +36,18 @@
   font-size: 1rem;
 }
 
+@media (max-width: 576px) {
+  .btn--lg {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.875rem;
+  }
+
+  .btn--md {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.8125rem;
+  }
+}
+
 /* Color Variants */
 .btn--primary {
   background-color: var(--color-accent-gold);

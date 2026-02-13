@@ -89,8 +89,17 @@ body {
   line-height: 1.5;
   color: var(--color-secondary-ivory);
   background-color: var(--color-neutral-black);
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
 
 /* Typography */
@@ -124,6 +133,30 @@ h5 {
 
 h6 {
   font-size: 0.875rem;
+}
+
+/* Mobile Typography */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  h4 {
+    font-size: 1.125rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
 }
 
 p {

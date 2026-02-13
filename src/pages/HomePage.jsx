@@ -73,7 +73,7 @@ export function HomePage() {
       {/* Features Section */}
       <section className="features-section">
         <div className="container">
-          <h2 className="section-title">Why Dhvani JEWELLERY ?</h2>
+          <h2 className="section-title">Why Dhvani JEWELLERY</h2>
           <div className="features-grid">
             {features.map((feature, index) => (
               <div key={index} className="feature-card fade-in-up">
