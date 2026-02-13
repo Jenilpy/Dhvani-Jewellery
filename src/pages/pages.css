@@ -1,0 +1,59 @@
+/* General Page Styles */
+main {
+  flex: 1;
+}
+
+section {
+  padding: var(--space-xxxl) var(--space-md);
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: var(--space-xxxl) var(--space-lg);
+  }
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: var(--space-xxl);
+  text-align: center;
+  color: var(--color-secondary-ivory);
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: var(--space-xl);
+  }
+}
+
+/* Products Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-xl);
+  margin-bottom: var(--space-xxl);
+}
+
+@media (min-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-xxl);
+  }
+}
+
+@media (min-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* CTA Button Wrapper */
+.cta-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-xxl);
+}

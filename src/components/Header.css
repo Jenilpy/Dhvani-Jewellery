@@ -1,0 +1,109 @@
+.header {
+  background-color: var(--color-neutral-black);
+  border-bottom: 1px solid rgba(198, 165, 92, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg) var(--space-md);
+  min-height: 70px;
+  position: relative;
+}
+
+.header__logo {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: var(--color-accent-gold);
+  text-decoration: none;
+  position: absolute;
+  left: var(--space-md);
+}
+
+.header__logo:hover {
+  color: #D4B373;
+}
+
+.header__nav {
+  display: flex;
+  gap: var(--space-xxl);
+  align-items: center;
+  justify-content: center;
+}
+
+.header__link {
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-neutral-dark-gray);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  position: relative;
+  transition: color var(--transition-base);
+}
+
+.header__link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent-gold);
+  transition: width var(--transition-base);
+}
+
+.header__link:hover {
+  color: var(--color-accent-gold);
+}
+
+.header__link:hover::after {
+  width: 100%;
+}
+
+.header__toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-neutral-dark-gray);
+  padding: var(--space-sm);
+  position: absolute;
+  right: var(--space-md);
+}
+
+.header__toggle:hover {
+  color: var(--color-accent-gold);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .header__nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: var(--space-lg);
+    background-color: var(--color-neutral-black);
+    padding: var(--space-lg);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-base);
+    border-bottom: 1px solid rgba(198, 165, 92, 0.15);
+  }
+
+  .header__nav--open {
+    max-height: 300px;
+  }
+
+  .header__toggle {
+    display: block;
+  }
+}
