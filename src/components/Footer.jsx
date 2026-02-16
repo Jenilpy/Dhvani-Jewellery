@@ -8,7 +8,7 @@ export function Footer() {
       <div className="footer__container container">
         <div className="footer__content">
           <div className="footer__section">
-            <h3 className="footer__title">Dhvani JEWLLERY</h3>
+            <h3 className="footer__title">Dhvani Jewellery</h3>
             <p className="footer__text">Premium imitation jewellery for the modern luxe woman.</p>
           </div>
 
@@ -39,7 +39,7 @@ export function Footer() {
 
         <div className="footer__bottom">
           <p className="footer__copyright">
-            © {new Date().getFullYear()} Dhvani JEWELLERY. All rights reserved.
+            © {new Date().getFullYear()} Dhvani Jewellery. All rights reserved.
           </p>
           <div className="footer__bottom-links">
             <a href="#" className="footer__bottom-link">Privacy Policy</a>

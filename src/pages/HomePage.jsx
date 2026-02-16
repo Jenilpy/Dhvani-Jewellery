@@ -73,7 +73,7 @@ export function HomePage() {
       {/* Features Section */}
       <section className="features-section">
         <div className="container">
-          <h2 className="section-title">Why Dhvani JEWELLERY</h2>
+          <h2 className="section-title">Why Dhvani Jewellery</h2>
           <div className="features-grid">
             {features.map((feature, index) => (
               <div key={index} className="feature-card fade-in-up">
@@ -99,7 +99,7 @@ export function HomePage() {
           <div className="story-content container">
             <h2 className="section-title">Our Story</h2>
             <p className="story-text">
-              Dhvani JEWELLERY was born from a simple belief: luxury doesn't have to scream loudly. It whispers. It reflects in the eyes of someone who knows the value of refined elegance.
+              Dhvani Jewellery was born from a simple belief: luxury doesn't have to scream loudly. It whispers. It reflects in the eyes of someone who knows the value of refined elegance.
             </p>
             <p className="story-text">
               Every piece in our collection is carefully curated for the modern woman—one who understands that true style is about confidence, authenticity, and the freedom to express herself without compromise.

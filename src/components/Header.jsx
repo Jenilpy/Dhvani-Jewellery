@@ -10,7 +10,7 @@ export function Header() {
     <header className="header">
       <div className="header__container container">
         <Link to="/" className="header__logo">
-          Dhvani JEWELLERY
+          Dhvani Jewellery
         </Link>
 
         <nav className={`header__nav ${isOpen ? 'header__nav--open' : ''}`}>
